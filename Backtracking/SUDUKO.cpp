@@ -47,6 +47,7 @@ bool canplace(int d,int r,int c) {
 // function to add the vaue at the position 
 void addDigit(int d,int r,int c) {
 	int i=(r/3)*3 + (c/3);
+	cout<<r<<" "<<c<<" "<<i<<endl;
 	row[r][d]++;
 	col[c][d]++;
 	box[i][d]++;
@@ -134,9 +135,9 @@ int main( ) {
 
 	Suduko();
     //  if suduko is solved then print that 
-	if(isSudukoSolved) display();
-    // else no solution exit for that value 
-	else cout<<"No solution"<<endl;
+	// if(isSudukoSolved) display();
+    // // else no solution exit for that value 
+	// else cout<<"No solution"<<endl;
 
 	#ifndef ONLINE_JUDGE 
 	  clock_t end = clock();
